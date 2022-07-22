@@ -1,0 +1,426 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e6e6e6;
+}
+
+body .cover,
+.main-section {
+    margin: 3% 8% 0 8%;
+}
+
+.flex-box {
+    display: flex;
+}
+
+.cover {
+    background-color: #140606;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 40px black;
+    transition: 0.1s ease-in-out;
+}
+
+.cover:hover {
+    transform: translate(0, 20px);
+    box-shadow: 20px 20px 40px black;
+}
+
+.intro {
+    color: white;
+    margin: 5%;
+}
+
+.cover img {
+    width: 30%;
+    margin: 2% 10% 0 5%;
+}
+
+.title {
+    font-size: 80px;
+    margin-bottom: 25px;
+}
+
+.description {
+    margin-bottom: 100px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    background-color: #0066ff;
+    padding: 3% 7%;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-bottom: 10%;
+    transition: 0.3s;
+}
+
+.link:hover {
+    background-color: #003380;
+}
+
+.watch-live {
+    margin-left: 15px;
+}
+
+.filter {
+    display: grid;
+    width: 400px;
+    height: 400px;
+    background-color: #1a1a1a;
+    padding: 1% 0;
+    border-radius: 1rem;
+}
+
+.filter a {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    margin: 5% 15%;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2rem;
+    transition: 0.5s ease-in-out;
+}
+
+.filter a:hover {
+    background-color: #999999;
+}
+
+.hot-news {
+    border: 1px solid #cccccc;
+    border-radius: 1rem;
+    width: 350px;
+    margin-right: 50%;
+    transition: 0.1s ease-in-out;
+}
+
+.hot-news:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 20px grey;
+}
+
+.topic a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2% 5%;
+    margin: 5%;
+}
+
+.blog-picture {
+    width: 100%;
+    margin-bottom: 7%;
+}
+
+.news-title {
+    margin: 7% 5%;
+}
+
+.status {
+    margin: 0 0 5% 5%;
+}
+
+.time,
+.comment {
+    padding-right: 15%;
+    align-items: center;
+}
+
+.icon {
+    padding-right: 1rem;
+}
+
+.blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5% 3%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+}
+
+.filter .selected {
+    color: white;
+    background-color: #0066ff;
+    transition: 0.3s ease-in-out;
+}
+
+.filter .selected:hover {
+    background-color: #003380;
+}
+
+.hidden-link {
+    display: none;
+    text-align: center;
+    padding: 5%;
+    transition: 0.3s ease-in-out;
+}
+
+.hidden-link:hover {
+    background-color: #003380;
+}
+
+.news {
+    margin-top: 5%;
+}
+
+.hidden-link a {
+    text-decoration: none;
+    background-color: #0066ff;
+    color: white;
+    padding: 2% 4%;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: #140606;
+    padding: 10%;
+    text-align: center;
+}
+
+.footer h1 {
+    color: white;
+    margin-bottom: 5%;
+    font-size: 48px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    margin: 3%;
+}
+
+hr {
+    margin-bottom: 5%;
+    border: 1px solid #404040;
+}
+
+.match-between {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15% 0 10% 0;
+}
+
+.match-box {
+    width: 350px;
+    height: 250px;
+}
+
+.fixture {
+    text-align: center;
+}
+
+.vs {
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+.fixture h3 {
+    margin-bottom: 5%;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social a {
+    color: white;
+    margin: 5% 2% 5% 2%;
+    transition: 0.3s ease-in-out;
+}
+
+.social a:hover {
+    color: #cccccc;
+}
+
+/* Responsive layout */
+/* For mobile device */
+@media screen and (max-width:575px) {
+    .cover {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cover img {
+        width: 50%;
+        margin: 0;
+    }
+
+    .intro {
+        padding: 10%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .description {
+        margin: 10%;
+    }
+
+    .news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+        background: none;
+        align-items: center;
+    }
+
+    .filter a {
+        margin: 0 5px;
+        font-weight: 600;
+        font-size: 16px;
+        height: 50px;
+        width: 200px;
+        border: 1px solid #cccccc;
+        margin: 3% 0 3% 0;
+    }
+
+    .blog {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-right: 15px;
+        margin-bottom: 60%;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .hot-news {
+        width: 450px;
+    }
+
+    .topic {
+        font-size: 14px;
+    }
+
+    .time,
+    .comment {
+        font-size: 12px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer h1 {
+        font-size: 38px;
+    }
+
+    br {
+        display: none;
+    }
+
+}
+
+/* Medium device */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .cover {
+        height: 400px;
+    }
+
+    .cover img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .intro {
+        margin-right: 0;
+    }
+
+    .title {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+    }
+
+    .description {
+        font-size: 12px;
+        margin-bottom: 30%;
+    }
+
+    .link {
+        font-size: 14px;
+        padding-left: 3%;
+        padding-right: 5%;
+    }
+
+    .filter {
+        display: flex;
+        height: fit-content;
+        width: 100%;
+        background: none;
+        margin: 3% 0 5% 0;
+    }
+
+    .filter a {
+        margin: 0 5px;
+        font-weight: 600;
+        font-size: 16px;
+        height: 50px;
+        width: 200px;
+        border: 1px solid #cccccc;
+    }
+
+    .news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog {
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 8%;
+    }
+
+    .hot-news {
+        width: 300px;
+    }
+
+    .topic {
+        font-size: 14px;
+    }
+
+    .time,
+    .comment {
+        font-size: 12px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .hidden-link {
+        display: block;
+        margin: 2rem 0 3rem 0;
+    }
+
+    .footer h1 {
+        font-size: 32px;
+    }
+}
